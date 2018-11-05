@@ -1,0 +1,12 @@
+@charset "UTF-8";
+//@import "default";
+@import "act";
+@import "dialog";
+@import "login";
+
+.icon-gf-act {
+  display: inline-block;
+  background: url("../img/sprite/gf-act.png") no-repeat center;
+  width: 151px;
+  height: 64px;
+}

@@ -1,0 +1,387 @@
+{
+    "get-roll-news": {
+        "code": 10000,
+        "data": [
+            {
+                "img_name": "717X369.jpg",
+                "new_id": "179",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/00\/Ch4BCVvStgaACPa0AAFrQ46VoAA520.jpg",
+                "jump_type": "1",
+                "jump_to": ""
+            },
+            {
+                "img_name": "717x369(2)(2).png",
+                "new_id": "170",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/01\/01\/Ch4BCVvFrbaAcYYfAAWIReSWhV0961.png",
+                "jump_type": "1",
+                "jump_to": ""
+            },
+            {
+                "img_name": "\u79fb\u52a8-\u957f\u56fe-\u5934\u56fe--717-369.jpg",
+                "new_id": null,
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/01\/Ch4BCVu_R8iAOHpdAAEFeR2m4kw619.jpg",
+                "jump_type": "2",
+                "jump_to": "http:\/\/activity-jxwy.ksgame.com\/yaxd\/"
+            }
+        ]
+    },
+    "get-news-list": {
+        "code": 10000,
+        "news": [
+            [
+                {
+                    "id": "181",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u5510\u5ae3\u53d1\u8d77\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u6296\u97f3\u6311\u6218\u8d5b\uff0c\u795e\u66f2\u300a\u7ea2\u662d\u613f\u300b\u8fd8\u80fd\u8fd9\u4e48\u73a9\uff1f",
+                    "created_at": "2018-11-05 14:12:12",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "180",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u53d1\u7cd6\u53d1\u798f\u5229\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u795d\u4ee3\u8a00\u4eba\u5510\u5ae3\u65b0\u5a5a\u5feb\u4e50",
+                    "created_at": "2018-10-29 12:03:38",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "179",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u5f00\u653e\u5267\u60c5\u624b\u6e38\u300a\u9526\u7ee3\u672a\u592e\u300b\u4eca\u65e5iOS\u9996\u53d1\uff0c\u798f\u5229\u5347\u7ea7\u5927\u653e\u9001\u200b",
+                    "created_at": "2018-10-26 10:45:41",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "178",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5b98\u7f51\u5956\u52b1\u9886\u53d6\u516c\u544a",
+                    "created_at": "2018-10-24 14:27:06",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "177",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u5173\u4e8e\u4e25\u5389\u6253\u51fb\u975e\u6b63\u5e38\u6e38\u620f\u884c\u4e3a\u7684\u516c\u544a",
+                    "created_at": "2018-10-24 14:17:53",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "176",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u5173\u4e8e\u6253\u51fb\u7b2c\u4e09\u65b9\u4ee3\u5145\u7684\u516c\u544a",
+                    "created_at": "2018-10-24 14:12:32",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "175",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5b98\u65b9\u5305\u5b89\u88c5\u6307\u5f15\u8bf4\u660e",
+                    "created_at": "2018-10-24 14:08:59",
+                    "context_type": "1",
+                    "context": ""
+                }
+            ],
+            [
+                {
+                    "id": "181",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u5510\u5ae3\u53d1\u8d77\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u6296\u97f3\u6311\u6218\u8d5b\uff0c\u795e\u66f2\u300a\u7ea2\u662d\u613f\u300b\u8fd8\u80fd\u8fd9\u4e48\u73a9\uff1f",
+                    "created_at": "2018-11-05 14:12:12",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "180",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u53d1\u7cd6\u53d1\u798f\u5229\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u795d\u4ee3\u8a00\u4eba\u5510\u5ae3\u65b0\u5a5a\u5feb\u4e50",
+                    "created_at": "2018-10-29 12:03:38",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "179",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u5f00\u653e\u5267\u60c5\u624b\u6e38\u300a\u9526\u7ee3\u672a\u592e\u300b\u4eca\u65e5iOS\u9996\u53d1\uff0c\u798f\u5229\u5347\u7ea7\u5927\u653e\u9001\u200b",
+                    "created_at": "2018-10-26 10:45:41",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "173",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u5510\u5ae3\u503e\u60c5\u4ee3\u8a00\uff01\u5f00\u653e\u5267\u60c5\u624b\u6e38\u300a\u9526\u7ee3\u672a\u592e\u300b\u4eca\u65e5\u9996\u53d1",
+                    "created_at": "2018-10-23 09:57:21",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "171",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5b98\u65b9\u5408\u4f5c\u5ba3\u4f20\u66f2\u300a\u7ea2\u662d\u613f\u300b\u516c\u5e03\uff0c\u5510\u5ae3\u53d1\u8d77\u6296\u97f3\u6311\u6218\u52a9\u4f60\u51fa\u9053\uff01",
+                    "created_at": "2018-10-18 10:14:17",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "170",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u5510\u5ae3\u52a9\u9635\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e3810\u670823\u65e5\u5b89\u5353\u5e73\u53f0\u9996\u53d1",
+                    "created_at": "2018-10-16 15:13:16",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "169",
+                    "category_id": "1",
+                    "title": "\u3010\u65b0\u95fb\u3011\u200b\u56fd\u5185\u4e00\u7ebf\u63d2\u753b\u5927\u89e6\u5e94\u63f4\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\uff0c\u7ed8\u5343\u9762\u674e\u672a\u592e",
+                    "created_at": "2018-10-12 15:51:32",
+                    "context_type": "1",
+                    "context": ""
+                }
+            ],
+            [
+                {
+                    "id": "178",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5b98\u7f51\u5956\u52b1\u9886\u53d6\u516c\u544a",
+                    "created_at": "2018-10-24 14:27:06",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "177",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u5173\u4e8e\u4e25\u5389\u6253\u51fb\u975e\u6b63\u5e38\u6e38\u620f\u884c\u4e3a\u7684\u516c\u544a",
+                    "created_at": "2018-10-24 14:17:53",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "176",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u5173\u4e8e\u6253\u51fb\u7b2c\u4e09\u65b9\u4ee3\u5145\u7684\u516c\u544a",
+                    "created_at": "2018-10-24 14:12:32",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "175",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5b98\u65b9\u5305\u5b89\u88c5\u6307\u5f15\u8bf4\u660e",
+                    "created_at": "2018-10-24 14:08:59",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "174",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b10\u670823\u65e5\u5b89\u5353\u9996\u53d1\u6b63\u5f0f\u5f00\u542f",
+                    "created_at": "2018-10-24 14:03:11",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "172",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b10\u670823\u65e5\u5b89\u5353\u9996\u53d1\u516c\u544a",
+                    "created_at": "2018-10-22 12:45:36",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "153",
+                    "category_id": "2",
+                    "title": "\u3010\u516c\u544a\u3011\u81f3\u5c0a\u5185\u6d4b\u7ed3\u675f\u516c\u544a",
+                    "created_at": "2018-08-24 18:15:42",
+                    "context_type": "1",
+                    "context": ""
+                }
+            ],
+            [
+                {
+                    "id": "162",
+                    "category_id": "3",
+                    "title": "\u3010\u6d3b\u52a8\u3011\u200b\u97f3\u7231\u5fc3\u52a8\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38NPC\u914d\u97f3\u5927\u8d5b\u5f00\u59cb\u5566\uff01",
+                    "created_at": "2018-09-26 10:39:47",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "67",
+                    "category_id": "3",
+                    "title": "\u3010\u6d3b\u52a8\u3011\u7eee\u4e3d\u5185\u6d4b\u4eca\u65e5\u5f00\u670d\uff0c\u9526\u7ee3\u534e\u670d\u5927\u6bd4\u62fc\u62c9\u5f00\u5e37\u5e55\uff01",
+                    "created_at": "2018-04-26 20:15:07",
+                    "context_type": "1",
+                    "context": ""
+                }
+            ],
+            [
+                {
+                    "id": "156",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u200b\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u82b1\u9b42\u6280\u80fd\u4e00\u89c8\uff0c\u7adf\u7136\u8fd8\u80fd\u8fd9\u4e48\u73a9\uff01",
+                    "created_at": "2018-09-05 15:16:40",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "154",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u200b\u989c\u503c\u5373\u6b63\u4e49\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u634f\u8138\u653b\u7565\u8bf7\u9a8c\u6536\uff01",
+                    "created_at": "2018-08-28 11:03:15",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "143",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u200b\u5343\u91cc\u59fb\u7f18\u4e00\u7ebf\u7275\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u4f19\u4f34\u7cfb\u7edf\u5168\u89e3\u6790",
+                    "created_at": "2018-08-15 11:30:34",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "107",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u5e9c\u90b8\u73a9\u6cd5\u4ecb\u7ecd",
+                    "created_at": "2018-06-07 14:25:03",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "123",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u4f19\u4f34\u7cfb\u7edf\u4e4b\u4eb2\u5bc6\u5ea6",
+                    "created_at": "2018-06-12 15:27:14",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "122",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u4f19\u4f34\u7cfb\u7edf\u4e4b\u4f19\u4f34\u8fde\u643a\u6280",
+                    "created_at": "2018-06-12 15:07:32",
+                    "context_type": "1",
+                    "context": ""
+                },
+                {
+                    "id": "121",
+                    "category_id": "9",
+                    "title": "\u3010\u653b\u7565\u3011\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u4f19\u4f34\u7cfb\u7edf\u4e4b\u4f19\u4f34\u76ae\u80a4",
+                    "created_at": "2018-06-12 15:02:38",
+                    "context_type": "1",
+                    "context": ""
+                }
+            ]
+        ],
+        "cates": [
+            "\u7efc\u5408",
+            "\u65b0\u95fb",
+            "\u516c\u544a",
+            "\u6d3b\u52a8",
+            "\u653b\u7565"
+        ],
+        "top": {
+            "id": "161",
+            "category_id": "1",
+            "title": "\u200b\u771f\u6b63\u7684\u88c5\u4fee\u5927\u795e\u90fd\u5728\u8fd9\u91cc\uff01\u300a\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u82b1\u5f0f\u5e9c\u90b8DIY\u4e86\u89e3\u4e00\u4e0b",
+            "created_at": "2018-09-20 20:01:52",
+            "context_type": "1",
+            "context": ""
+        }
+    },
+    "video-list": {
+        "code": 10000,
+        "data": [
+            {
+                "id": "13",
+                "video_url": "\/\/1255423641.vod2.myqcloud.com\/7bfdbe68vodtransgzp1255423641\/8eaf5cd15285890782218663471\/v.f230.m3u8",
+                "thumbnail": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/01\/Ch4BCVu8Q0yAYwRBAAEKV4r54rI289.jpg",
+                "title": "\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u201c\u5fc3\u52a8\u58f0\u4f18\u56e2\u201d\u58f0\u4f18\u89e3\u8bfb",
+                "desc": "\u9526\u7ee3\u672a\u592e\u300b\u624b\u6e38\u201c\u5fc3\u52a8\u58f0\u4f18\u56e2\u201d\u58f0\u4f18\u89e3\u8bfb-\u5b63\u51a0\u9716\u3001\u8fb9\u6c5f\u7b49"
+            },
+            {
+                "id": "11",
+                "video_url": "\/\/1255423641.vod2.myqcloud.com\/7bfdbe68vodtransgzp1255423641\/9a44b65d7447398155603415000\/v.f230.m3u8",
+                "thumbnail": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/01\/Ch4BCVrdqauAZBsnAAE4hiPNp-0997.jpg",
+                "title": "\u5ba3\u4f20\u89c6\u9891",
+                "desc": "\u5ba3\u4f20\u89c6\u9891-\u5ba3\u4f20\u89c6\u9891"
+            },
+            {
+                "id": "10",
+                "video_url": "\/\/1255423641.vod2.myqcloud.com\/7bfdbe68vodtransgzp1255423641\/95a9c9057447398155603220266\/v.f230.m3u8",
+                "thumbnail": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/01\/Ch4BCVrdqIKAKz2SAAEDKSLrSIg862.jpg",
+                "title": "\u5f00\u573a\u89c6\u9891",
+                "desc": "\u5f00\u573a\u89c6\u9891"
+            },
+            {
+                "id": "9",
+                "video_url": "\/\/1255423641.vod2.myqcloud.com\/7bfdbe68vodtransgzp1255423641\/97dd7a007447398155603305140\/v.f230.m3u8",
+                "thumbnail": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/01\/Ch4BCVrdps-AfnklAAFvjdRIck8387.jpg",
+                "title": "\u7535\u89c6\u5267\u7247\u82b1",
+                "desc": "\u7535\u89c6\u5267\u7247\u82b1"
+            }
+        ]
+    },
+    "wap-index": {
+        "code": 10000,
+        "data": [
+            {
+                "img_name": "1228-\u674e\u5e38\u8339-\u6700\u7ec8\u6210\u54c1.jpg",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/00\/Ch4BCVu-MHyAPpRlAAjHX0brneY929.jpg",
+                "img_desc": "\u674e\u5e38\u8339"
+            },
+            {
+                "img_name": "1226-\u674e\u957f\u4e50-\u6700\u7ec8\u6210\u54c1.jpg",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/00\/Ch4BCVu-MHWAWiJGAAabzVEdWQw702.jpg",
+                "img_desc": "\u674e\u957f\u4e50"
+            },
+            {
+                "img_name": "1222-\u62d3\u8dcb\u4f59-\u6700\u7ec8\u6210\u54c1.jpg",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/00\/Ch4BCVu-MG6AecbsAAiMPJUJ_RU079.jpg",
+                "img_desc": "\u62d3\u8dcb\u4f59"
+            },
+            {
+                "img_name": "1219-\u674e\u672a\u592e-\u6700\u7ec8\u6210\u54c1.jpg",
+                "img_url": "\/\/kfcdn.ksgame.com\/group1\/M00\/00\/00\/Ch4BCVu-MGaAXdJTAAiQ157Z94w632.jpg",
+                "img_desc": "\u674e\u672a\u592e"
+            }
+        ]
+    },
+    "top-index": {
+        "code": 10000,
+        "data": {
+            "id": "14",
+            "thumbnail": "\/\/kfcdn.ksgame.com\/group1\/M00\/01\/01\/Ch4BCVvNT5iAHUXeAAGlDVzD1t0452.png",
+            "video_url": "\/\/1255423641.vod2.myqcloud.com\/7bfdbe68vodtransgzp1255423641\/7392f6d75285890782483966206\/v.f230.m3u8"
+        }
+    },
+    "game-features": {
+        "code": 10000,
+        "data": [
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KriAFbDvAAD8UhlH78U416.jpg"
+            },
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KriAA8pgAAE4SAont0o430.jpg"
+            },
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KriAU09DAAEejCZmghs819.jpg"
+            },
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KrSADBZTAAEguwXfqcg081.jpg"
+            },
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KrSAfrztAAFHGb7K-6Q116.jpg"
+            },
+            {
+                "img_url": "//kfcdn.ksgame.com/group1/M00/00/00/Ch4BCVu-KrSAMAZlAAEIe7mtcOs010.jpg"
+            }
+        ]
+    }
+}

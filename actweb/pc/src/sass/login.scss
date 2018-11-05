@@ -1,0 +1,305 @@
+
+.account-dialog, .dialog {
+  background: 0 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important
+}
+
+.account-dialog .login-header {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #f5f6fa;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  margin-bottom: 25px
+}
+
+.account-dialog .icon-account-close {
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 10px
+}
+
+.account-dialog .icon-account-dialog-back {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  cursor: pointer
+}
+
+.account-dialog .icon-dialog-logo {
+  margin: 0 auto
+}
+
+.account-dialog .dialog-logo-wrap {
+  padding: 30px 0
+}
+
+.account-dialog .login-btn {
+  margin-top: 30px;
+  font-size: 22px;
+  border-radius: 5px
+}
+
+.account-dialog .login {
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden
+}
+
+.account-dialog .login .password, .account-dialog .login .phone, .account-dialog .login .username, .account-dialog .login .valicode {
+  position: relative
+}
+
+.account-dialog .login .password, .account-dialog .login .valicode {
+  margin-top: 20px
+}
+
+.account-dialog .login .icon-password, .account-dialog .login .icon-phone, .account-dialog .login .icon-user, .account-dialog .login .icon-valicode {
+  position: absolute;
+  left: 50px;
+  top: 11px
+}
+
+.account-dialog .login .icon-valicode {
+  top: 13px
+}
+
+.account-dialog .login .phone .input {
+  width: 188px;
+  border-right: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  float: left
+}
+
+.account-dialog .login .phone button {
+  height: 42px;
+  width: 115px;
+  border: none;
+  background-color: #7d97ff;
+  color: #fff;
+  font-size: 14px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  float: left
+}
+
+.account-dialog .login .btn button {
+  width: 30%;
+  margin-left: 35%;
+  background-color: #f76c35;
+  height: 34px;
+  border: none;
+  color: #fff;
+  font-size: 14px
+}
+
+.account-dialog .login .link {
+  color: #555;
+  padding-right: 10%;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 15px
+}
+
+.account-dialog .login .link a {
+  color: #555
+}
+
+.account-dialog .login .line {
+  color: #d9dce1
+}
+
+.account-dialog .login h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0;
+  height: 95px;
+  position: relative
+}
+
+.account-dialog .login .register-title {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  height: 20px;
+  line-height: 20px;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 16px;
+  color: #888
+}
+
+.account-dialog .login .register-title span {
+  width: 50%;
+  float: left;
+  cursor: pointer
+}
+
+.account-dialog .login .register-title span.active {
+  color: #fd6443;
+  position: relative
+}
+
+.account-dialog .login .register-title span em {
+  padding: 0 20px
+}
+
+.account-dialog .login .register-title-phone {
+  text-align: left;
+  position: relative
+}
+
+.account-dialog .login .register-title-phone:before {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  content: '';
+  width: 0;
+  height: 12px;
+  border-left: 1px solid #d9dce1
+}
+
+.account-dialog .login .register-title-username {
+  text-align: right
+}
+
+.account-dialog .login-share {
+  height: 430px
+}
+
+.account-dialog .login-register {
+  height: 370px
+}
+
+.account-dialog .login-register h3 {
+  height: 75px
+}
+
+.account-dialog .login-register .arg {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  color: #565656;
+  font-size: 12px;
+  float: left
+}
+
+.account-dialog .login-register .arg a {
+  color: #fd6443
+}
+
+.account-dialog .login-register .arg .account-has {
+  color: #7d97ff;
+  font-size: 14px;
+  float: right
+}
+
+.account-dialog .login-register .login-btn {
+  margin-top: 20px
+}
+
+.account-dialog .login-forget {
+  height: 330px
+}
+
+.account-dialog .input {
+  border: 1px solid #d9dce1;
+  height: 42px;
+  line-height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  padding-left: 30px;
+  font-size: 14px;
+  border-radius: 5px
+}
+
+.account-dialog .input:focus {
+  border-color: #999;
+  outline: 0
+}
+
+.account-dialog .change {
+  height: 330px
+}
+
+.account-dialog .change .input {
+  padding-left: 10px
+}
+
+.account-dialog .account-dialog-msg {
+  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  top: 135px;
+  height: 0;
+  line-height: 0;
+  color: #bababa;
+  border-top: 1px solid #ebebeb
+}
+
+.account-dialog .account-dialog-msg span {
+  background-color: #fff;
+  padding: 0 20px
+}
+
+.account-dialog .btn button:hover {
+  background-color: #f78457
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 400px #fff inset;
+  box-shadow: 0 0 0 400px #fff inset
+}
+
+.icon-user {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -586px -450px;
+  width: 16px;
+  height: 17px;
+}
+.icon-password {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -513px -359px;
+  width: 13px;
+  height: 18px;
+}
+.icon-account-close {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -623px -528px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon-phone {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -421px -263px;
+  width: 12px;
+  height: 18px;
+}
+
+.icon-valicode {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -421px -301px;
+  width: 14px;
+  height: 15px;
+}
+
+.icon-account-dialog-back {
+  display: block;
+  background-image: url(../img/sprite-login.png);
+  background-position: -429px -168px;
+  width: 9px;
+  height: 15px;
+}

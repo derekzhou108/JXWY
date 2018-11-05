@@ -1,0 +1,158 @@
+//顶栏和登录框样式
+.top{
+  height: 60px;
+  line-height: 60px;
+  background-color: #F5F3F4;
+  a{
+    color:#DD9912;
+  }
+}
+
+.dialog,.bar-dialog{
+  background: none !important;
+  box-shadow: none !important;
+  //.layui-layer-content{
+  //  overflow: hidden !important;
+  //}
+}
+
+.bar-dialog{
+  .login{
+    height: 410px;
+    position: relative;
+    .username,.password,.valicode{
+      position: relative;
+    }
+    .icon-user,.icon-password,.icon-valicode{
+      position: absolute;
+      left: 50px;
+      top:6px;
+    }
+    .phone {
+      .input{
+        width: 188px;
+        padding-left: 10px;
+      }
+      button{
+        height:50px;
+        width: 135px;
+        border:none;
+        background-color: #45BBF2;
+        color:#fff;
+        margin-left: 5px;
+      }
+    }
+    .btn{
+      button{
+        width: 80%;
+        margin-left: 10%;
+        background-color: #F64646;
+        height: 50px;
+        border:none;
+        color: #fff;
+        letter-spacing: 3px;
+      }
+    }
+    .link{
+      color:#3EACDA;
+      padding-right: 10%;
+      font-size: 15px;
+      a{
+        color:#3EACDA;
+      }
+    }
+    h3{
+      height:95px;
+      position: relative;
+      .icon-bar-dialog-back{
+        position: absolute;
+        top:37px;
+        left: 40px;
+      }
+    }
+    .register-title{
+      height: 55px;
+      line-height: 55px;
+      width: 80%;
+      margin-left: 10%;
+      font-size: 18px;
+      color:#A8A8A8;
+      border-bottom:1px solid #E3E3E3;
+      span{
+        width: 50%;
+        float: left;
+        text-align: center;
+        &.active{
+          color:#FF9C1C;
+          position: relative;
+          &:after{
+            content: '';
+            position: absolute;
+            bottom:0;
+            left:38px;
+            width: 85px;
+            height:2px;
+            background-color: #FF9C1C;
+          }
+        }
+        em{
+          padding:0 15px;
+        }
+      }
+    }
+  }
+  .login-share{
+    height: 430px;
+  }
+  .login-register{
+    height:520px;
+    h3{
+      height:75px;
+    }
+    .arg{
+      width: 80%;
+      margin-left: 10%;
+      color:#9C9C9C;
+      a{
+        color:#FF9C1C;
+      }
+    }
+  }
+  .input{
+    border:1px solid #DBDBDB;
+    height: 50px;
+    line-height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 55px;
+    &:focus{
+      border-color:#76CCF4;
+      outline: none;
+    }
+  }
+  .change{
+    .input{
+      padding-left: 10px;
+    }
+  }
+  .bar-dialog-msg{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    top: 135px;
+    height:0;
+    line-height: 0px;
+    color:#BABABA;
+    border-top:1px solid #EBEBEB;
+    span{
+      background-color: #fff;
+      padding:0 20px;
+    }
+  }
+}
+.bar-dialog .btn button:hover{
+  background-color: #f96b6b;
+}
+.icon-bar-close{
+  display: block;
+}

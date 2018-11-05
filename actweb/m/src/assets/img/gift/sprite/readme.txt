@@ -1,0 +1,10 @@
+gift-1:玫瑰
+gift-2:银饼
+gift-3:普通诗会涵
+gift-4:金饼
+gift-5:高级时装材料礼包
+gift-6:同心结
+gift-7：食盒
+gift-8:豪华诗会函
+gift-9:皮肤
+gift-10:百年好合

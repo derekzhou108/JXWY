@@ -1,0 +1,179 @@
+.bg-video {
+  height: 100%;
+  background: url("../img/bg-video.jpg");
+  background-size: 100% 100%;
+  padding-top: 140px;
+  .left-tree {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 10;
+  }
+  .video-container {
+    width: 1250px;
+    height: 865px;
+    background: url("../img/v-bg.png") no-repeat center;
+    margin: 0 auto;
+    position: relative;
+    .v-control {
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      ul {
+
+        li {
+          width: 57px;
+          height: 136px;
+          background: url(../img/v-normal-btn.png) no-repeat top;
+          float: left;
+          margin: 0 4px;
+          padding-top: 20px;
+          cursor: pointer;
+          &.active {
+            width: 57px;
+            padding-top: 70px;
+            height: 178px;
+            background: url("../img/v-active-btn.png") no-repeat top;
+          }
+          span {
+            width: 21px;
+            font-size: 21px;
+            line-height: 23px;
+            color: #fff1d8;
+            display: block;
+            margin: 0 auto;
+            font-family: 宋体, 微软雅黑;
+          }
+        }
+      }
+    }
+  }
+  .v-inner {
+    padding-top: 20px;
+    text-align: center;
+    .v-content {
+      position: relative;
+      width: 1250px;
+      height: 534px;
+      overflow: hidden;
+      .scrollbar-wrapper {
+        overflow-y: auto;
+        height: 100%;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .scrollbar_view {
+        height: 100%;
+      }
+      ul {
+        padding: 0px 44px;
+        .video-item, .image-item {
+          position: relative;
+          margin: 10px 10px;
+          &:hover {
+            .mask {
+              display: block;
+            }
+            .desc-mask {
+              display: none;
+            }
+          }
+          .desc-mask {
+            position: absolute;
+            bottom: 0;
+            background: #000000;
+            //opacity: 0.8;
+            //filter: alpha(opacity = 80);
+            height: 35px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            .desc-text {
+              display: inline-block;
+              height: 100%;
+              line-height: 35px;
+            }
+          }
+          .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            display: none;
+          }
+          .icon-show-img, .icon-show-video {
+            position: absolute;
+            top: 50%;
+            margin-top: -80px;
+            left: 50%;
+            margin-left: -80px;
+            cursor: pointer;
+            -webkit-animation: breath 1.5s 0s ease-in infinite;
+            -moz-animation: breath 1.5s 0s ease-in infinite;
+            -ms-animation: breath 1.5s 0s ease-in infinite;
+            -o-animation: breath 1.5s 0s ease-in infinite;
+            animation: breath 1.5s 0s ease-in infinite;
+          }
+          img {
+            width: 366px;
+            height: 247px;
+          }
+          a {
+            width: 159px;
+            height: 159px;
+            border: 1px solid #a48d66;
+            display: block;
+            span.role-type-2 {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+
+          p {
+            text-align: center;
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 2px;
+            color: #a88c60;
+          }
+        }
+      }
+      .scrollbar__bar {
+        border-radius: 4px;
+        bottom: 25px;
+        opacity: 0;
+        position: absolute;
+        right: 13px;
+        transition: opacity .12s ease-out;
+        z-index: 1;
+        top: 25px;
+        width: 10px;
+        .scrollbar__thumb {
+          background-color: rgba(168, 140, 96, 0.3);
+          border-radius: inherit;
+          cursor: pointer;
+          display: block;
+          height: 0;
+          position: relative;
+          transition: background-color .3s;
+          width: 100%;
+          &:hover {
+            background-color: #a88c60;
+          }
+        }
+      }
+      &:hover {
+        .scrollbar__bar {
+          opacity: 1;
+          transition: opacity .34s ease-out
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('include/meta.html')
+
+</head>
+<body>
+
+@@include('include/publicTop.html')
+@@include('include/top.html')
+<div class="icon-leaf1"></div>
+<div class="icon-leaf2"></div>
+<div class="icon-leaf3 ms-leaf"></div>
+<div class="icon-leaf4"></div>
+<div class="wrapper bg">
+    <div class="bg bg-video">
+        <div class="left-tree">
+            <i class="icon-left-tree"></i>
+        </div>
+        <div class="video-container">
+            <div class="v-inner">
+                <div class="v-title">
+                    <i class='icon-sp'></i>
+                </div>
+                <div class="v-content">
+                    <div class="scrollbar-wrapper">
+                        <div class="scrollbar_view">
+                            <!--
+                                             模版填充
+                                            -->
+                        </div>
+                    </div>
+
+                    <div class="scrollbar__bar">
+                        <div class="scrollbar__thumb"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="v-control">
+                <ul>
+                    <li class="active" data-type="sp"><span>精彩视频</span></li>
+                    <li data-type="tj"><span>游戏图鉴</span></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="qr-container">
+            <ul class="clearfix">
+                <li><a class="qr-1"></a></li>
+                <li><a class="qr-2" href="https://weibo.com/jxwysy" target="_blank"></a></li>
+                <li><a class="qr-3" target="_blank"
+                       href="https://tieba.baidu.com/f?kw=%E9%94%A6%E7%BB%A3%E6%9C%AA%E5%A4%AE%E6%89%8B%E6%B8%B8&ie=utf-8"></a>
+                </li>
+                <li><a class="qr-4"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</div>
+<script type="text/html" id="v-tpl">
+<ul class="clearfix">
+{{if TYPE==='VIDEO'}}
+{{each data value}}
+<li class="video-item u-fl" data-video="{{value.video_url}}">
+        <img src="{{value.thumbnail}}" alt="">
+<div class="desc-mask"><span class="desc-text">{{value.desc}}</span></div>
+    <div class="mask u-w100 u-h100"><i class="icon-show-video"></i></div>
+</li>
+{{/each}}
+
+{{else if TYPE==='IMAGE'}}
+{{each data value}}
+<li class="image-item u-fl" data-image="{{value.img_url}}">
+        <img src="{{value.img_url}}" alt="">
+<div class="desc-mask"><span class="desc-text">{{ value.img_desc}}</span></div>
+    <div class="mask u-w100 u-h100"><i class="icon-show-img"></i></div>
+</li>
+{{/each}}
+{{/if}}
+
+</ul>
+</script>
+@@include('include/footer.html')
+
+<script type="text/javascript" src="../dist/js/videoImage.js?rev=@@hash"></script>
+
+<!--[if lt IE 9]>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-shim.js" charset="utf-8"></script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-sham.js" charset="utf-8"></script>
+<![endif]-->
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.0.js" charset="utf-8"></script>
+</body>
+</html>

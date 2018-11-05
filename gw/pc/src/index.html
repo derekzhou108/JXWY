@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    @@include('include/meta.html')
+
+</head>
+<style type="text/css">
+    canvas,
+    .sketch {
+        position: fixed;
+        z-index: 1;
+        /*height: 100%;*/
+        /*background: #000;*/
+    }
+
+    .layui-layer {
+        left: 50% !important;
+        transform: translateX(-50%);
+        margin-left: 0px !important;
+    }
+</style>
+
+<body class="bg-index">
+<!--<canvas class="sketch" height="600" width="1920"></canvas>-->
+
+@@include('include/publicTop.html')
+<div class="gw-top">
+    <div class="top-warp-main">
+        <div class="top-nav">
+            <div class="top-warp clearfix">
+                <ul class="u-fr nav-tabs">
+                    <li class="nav-index">
+                        <a target="_blank" href="/site/index">官网首页</a>
+                    </li>
+                    <li class="nav-news">
+                        <a href="#yxzx">新闻资讯</a>
+                    </li>
+                    <li class="nav-desc">
+                        <a href="#bbgt">游戏特色</a>
+                    </li>
+                    <li class="nav-first">
+                        <a target="_blank" href='/novice'>新手专区</a>
+                    </li>
+                    <li class="nav-info">
+                        <a target="_blank" href='/game-database'>游戏资料</a>
+                    </li>
+                    <li class="nav-forum">
+                        <a href="#gfqr">官方社区</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="icon-leaf1"></div>
+<div class="icon-leaf2"></div>
+<div class="icon-leaf3"></div>
+<div class="icon-leaf4"></div>
+<div class="wrapper bg">
+    <div class="bg bg-1">
+        <div class="jxwy-small">
+            <span class="icon-jxwy-small"></span>
+        </div>
+        <div class="jxwy-big">
+            <span class="icon-jxwy-big"></span>
+        </div>
+        <div class="play-wrapper" id="playVideo"
+             data-video="//1255423641.vod2.myqcloud.com/7bfdbe68vodtransgzp1255423641/9598d9e57447398155603212634/v.f230.m3u8">
+            <button type="button" class="circle"></button>
+        </div>
+    </div>
+    <div class="bg bg-2">
+        <div id="yxzx" class="news-warp">
+            <div class="news-left">
+                <div class="down-box">
+                    <a class="az" href="/share/index" target="_blank"></a>
+                    <a class="ios" href="/share/index" target="_blank"></a>
+                    <a class="pc-down" href="javascript:void(0);" onclick="alert('敬请期待！')"></a>
+                </div>
+            </div>
+            <div class="news-center news-list">
+                <div class="news-tab"></div>
+                <div class="tab-line1"></div>
+                <div class="tab-line2"></div>
+                <div class="news-content clearfix"></div>
+            </div>
+
+            <div class="news-right flexslider" id="news-banner">
+                <div class="slides u-w100 u-h100" id="slides"></div>
+            </div>
+        </div>
+        <div class="btn-team">
+            <a class="-b1 bt" href="/novice" target="_blank">新手专区</a>
+            <a class="-b2 bt" href='/game-database' target="_blank">官方资料库</a>
+            <a class="-b3 bt" href='/news/list?type=guides' target="_blank">攻略中心</a>
+        </div>
+    </div>
+    <div class="bg bg-3">
+        <div id="bbgt" class="bbgt-warp u-tc">
+            <div class="title-gtxwf"><span class="icon-title-gtxwf"></span></div>
+            <div class="u-pos-re  banner-yxts swiper-container">
+                <div class="swiper-wrapper"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <a href="javascript:void(0);" class="hh bbgt-prev"></a>
+                <a href="javascript:void(0);" class="hh bbgt-next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg bg-4">
+        <div class="hbtj-warp u-tc">
+            <div class="title-hbtj">
+                <span class="icon-title-hbtj"></span>
+            </div>
+            <ul class="clearfix">
+                <li class="active"><a class="icon-hbtj-btn1" data-type="all" href="javascript:void(0);"></a></li>
+                <li><a class="icon-btn-orange" data-type="1" href="javascript:void(0);"></a></li>
+                <li><a class="icon-btn-purple" data-type="3" href="javascript:void(0);"></a></li>
+                <li><a class="icon-btn-blue" data-type="2" href="javascript:void(0);"></a></li>
+                <li><a class="icon-hbtj-btn5" href="javascript:void(0);"></a></li>
+            </ul>
+            <div class="foot_tab">
+                <a href="javascript:void(0)" class="page_btn prev"></a>
+                <a href="javascript:void(0)" class="page_btn next"></a>
+                <ul class="roll-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg bg-5">
+        <div class="sztj-warp u-tc">
+            <div class="title-sztj"><span class="icon-title-sztj"></span></div>
+            <div class="u-pos-re  banner-sztj swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide part-1">
+                        <img src="../dist/img/part/part-1-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-2">
+                        <img src="../dist/img/part/part-2-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-3">
+                        <img src="../dist/img/part/part-3-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-4">
+                        <img src="../dist/img/part/part-4-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-5">
+                        <img src="../dist/img/part/part-5-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-6">
+                        <img src="../dist/img/part/part-6-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                    <div class="swiper-slide part-7">
+                        <img src="../dist/img/part/part-7-banner.png?rev=@@hash" alt=""/>
+                    </div>
+                </div>
+                <div class="sztj-pagination"></div>
+                <a href="javascript:void(0);" class="hh next icon-sz-btn" id="next1"></a>
+                <a href="javascript:void(0);" class="hh prev icon-sz-btn" id="prev1"></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg bg-6">
+        <div id="stzx" class="stg-warp">
+            <div class="stg-content">
+                <div class="video-warp clearfix">
+                </div>
+                <div class="middle-warp">
+                    <a class="more-btn" title="更多" target="_blank" href="/video/list"></a>
+                </div>
+                <div class="image-warp">
+                    <!--<div class="more-image u-fl"><img src="../dist/img/yh.png" alt=""></div>-->
+                    <!--<div class="image-item u-fl"><img src="../dist/img/img1.jpg" alt=""><div class="mask u-w100 u-h100"><i class="icon-show-img"></i></div></div>-->
+                    <!--<div class="image-item u-fl"><img src="../dist/img/img1.jpg" alt=""><div class="mask u-w100 u-h100"><i class="icon-show-img"></i></div></div>-->
+                    <!--<div class="image-item u-fl"><img src="../dist/img/img1.jpg" alt=""><div class="mask u-w100 u-h100"><i class="icon-show-img"></i></div></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="qr-container" id="gfqr">
+            <ul class="clearfix">
+                <li><a class="qr-1"></a></li>
+                <li><a class="qr-2" href="https://weibo.com/jxwysy" target="_blank"></a></li>
+                <li><a class="qr-3" target="_blank"
+                       href="https://tieba.baidu.com/f?kw=%E9%94%A6%E7%BB%A3%E6%9C%AA%E5%A4%AE%E6%89%8B%E6%B8%B8&ie=utf-8"></a>
+                </li>
+                <li><a class="qr-4"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="hbtj-tpl">
+
+{{each $data}}
+<li class="item" data-type="{{$value.type}}" data-num="{{$index}}">
+    <a href="/person/detail#id={{$value.id.substring(1)}}" target="_blank">
+        <div class="itemBack"><span>{{$value.name}}</span></div>
+        <div class="itemFront"><img src="../dist/img/huoban/people/{{$value.id}}.png">
+            <div class="img-mask"></div>
+        </div>
+    </a></li>
+{{/each}}
+</script>
+
+@@include('include/footer.html')
+
+
+<script type="text/javascript" src="../dist/lib/terseBanner/jquery.terseBanner.pkgd.js?rev=@@hash"></script>
+
+<script type="text/javascript" src="../dist/js/index.js?rev=@@hash"></script>
+
+
+<!--[if !IE8 ]><!-->
+<script type="text/javascript" src="../dist/js/clickspark.js"></script>
+<script type="text/javascript" src="../dist/js/initClickspark.js"></script>
+<!--<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-shim.js" charset="utf-8"></script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-sham.js" charset="utf-8"></script>
+<![endif]-->
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.0.js" charset="utf-8"></script>
+</body>
+
+</html>

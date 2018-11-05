@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include('include/meta.html')
+
+</head>
+<body class="bg-index">
+
+@@include('include/publicTop.html')
+@@include('include/top.html')
+<div class="icon-leaf1"></div>
+<div class="icon-leaf2"></div>
+<div class="icon-leaf3"></div>
+<div class="icon-leaf4"></div>
+<div class="wrapper pd">
+    <div class="screen screen-1">
+        <div class="container">
+            <div class="logo-per">
+                <span class="icon-jxwy-small-pd"></span>
+            </div>
+            <div class="section_content" id="section_1">
+
+            </div>
+            <div class="page-btn">
+                <div class="inner">
+                    <a href="javascript:void(0)" class="icon-sz-btn prev"></a>
+                    <a href="javascript:void(0)" class="icon-sz-btn next"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="screen screen-2">
+        <div class="container">
+            <h2 class="tit1 hh" title="技能介绍"></h2>
+            <div class="jn-box" id="section_2">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="screen screen-3">
+        <div class="container">
+            <h2 class="tit2 hh" title="更多角色"></h2>
+            <a href="/person/index" target="_blank" class="icon-all-roll"></a>
+            <div class="foot_tab">
+                <a href="javascript:void(0)" class="page_btn icon-btn-left-p"></a>
+                <a href="javascript:void(0)" class="page_btn icon-btn-right-p"></a>
+                <ul class="roll-list">
+                </ul>
+            </div>
+            <div class="qr-container">
+                <ul class="clearfix">
+                    <li><a class="qr-1"></a></li>
+                    <li><a class="qr-2" href="https://weibo.com/jxwysy" target="_blank"></a></li>
+                    <li><a class="qr-3" target="_blank"
+                           href="https://tieba.baidu.com/f?kw=%E9%94%A6%E7%BB%A3%E6%9C%AA%E5%A4%AE%E6%89%8B%E6%B8%B8&ie=utf-8"></a>
+                    </li>
+                    <li><a class="qr-4"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script type="text/html" id="page-1">
+<div class="person-img">
+    <img src="../dist/img/huoban/people/{{id}}.png">
+</div>
+<div class="person-desc">
+<div class="person-container">
+    <h2>{{name}}</h2>
+<div class="desc-list">
+<ul>
+{{if cv}}
+    <li>
+        <p>
+            <strong>CV：{{cv}}</strong>
+        </p>
+        <span class="icon-playAudio" onclick="person_detail.playSound(this,'{{id}}')"></span>
+    </li>
+{{/if}}
+
+<li>
+<p>
+    <strong>定位：</strong>{{typeText}}
+</p>
+</li>
+<li>
+<p>
+    <strong>品质：</strong>{{colorText}}
+</p>
+</li>
+<li>
+<p>
+    <strong>伙伴介绍：</strong>{{desc}}
+</p>
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+</script>
+<script type="text/html" id="page-2">
+<ul class="clearfix jn-ul">
+{{each skill value index}}
+<li class="jn {{!index?"active":''}}">
+        <a class="jn-tar" href="javascript:void(0);" onclick="person_detail.skillRender(this,{{value}})">
+        <img src="../dist/img/huoban/jn/{{id}}/{{value.skill_id}}.png">
+</a>
+</li>
+{{/each}}
+</ul>
+<h2 class="jn-name">{{skill[0].name}}</h2>
+<p class="jn-desc">{{skill[0].desc}}</p>
+
+</script>
+@@include('include/footer.html')
+
+<script type="text/javascript" src="../dist/js/person-detail.js?rev=@@hash"></script>
+</body>
+</html>

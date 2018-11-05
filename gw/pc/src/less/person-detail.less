@@ -1,0 +1,357 @@
+.screen {
+  min-width: 1200px;
+  width: 100%;
+}
+
+@-webkit-keyframes flipOutYtest {
+  from {
+    -webkit-transform: perspective(1400px);
+    transform: perspective(1400px);
+    z-index: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 60deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 60deg);
+    opacity: 1;
+  }
+
+  50% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, 180deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, 180deg);
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.flipOut {
+  -webkit-animation: flipOutYtest 0.75s linear;
+  animation: flipOutYtest 0.75s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInYtest {
+  from {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -180deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -180deg);
+    opacity: 0;
+    z-index: 0;
+  }
+
+  50% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -90deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -90deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: perspective(1400px) rotate3d(0, 1, 0, -60deg);
+    transform: perspective(1400px) rotate3d(0, 1, 0, -60deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(1400px);
+    transform: perspective(1400px);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.flipIn {
+  -webkit-animation: flipInYtest 0.75s linear;
+  animation: flipInYtest 0.75s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.pd {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 1300px;
+    height: 100%;
+  }
+  .screen-1 {
+    height: 1090px;
+    background: url(../img/huoban/pd-1.jpg) center top no-repeat;
+    .logo-per {
+      position: absolute;
+      top: 50px;
+      left: -140px;
+
+    }
+    .person-img {
+      position: absolute;
+      bottom: 30px;
+      left: -90px;
+      width: 1000px;
+      height: 1000px;
+      img {
+      }
+    }
+    .person-desc {
+      width: 362px;
+      height: 614px;
+      background: url("../img/huoban/desc-bk.png") no-repeat center;
+      position: absolute;
+      bottom: 310px;
+      right: 200px;
+      padding-left: 35px;
+      .person-container {
+        margin-top: 30px;
+        h2 {
+          width: 100%;
+          height: 47px;
+          font-size: 46px;
+          font-weight: bold;
+          line-height: 47px;
+          letter-spacing: 4px;
+          color: #514238;
+        }
+        .desc-list {
+          ul {
+            li {
+              width: 100%;
+              height: 62px;
+              line-height: 62px;
+              border-bottom: 1px dashed #d3c4b1;
+              p {
+                font-size: 21px;
+                color: #514238;
+                //font-weight: 600;
+                strong {
+                  font-size: 22px;
+                }
+              }
+              &:last-child {
+                max-height: 270px;
+                height: auto;
+                border: none;
+                padding-top: 15px;
+                overflow: hidden;
+                p {
+                  line-height: 31px;
+                  width: 287px;
+                }
+              }
+              &:first-child {
+                p {
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+                span {
+                  vertical-align: middle;
+                  margin-left: 12px;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+    .icon-sz-btn {
+      width: 62px;
+      height: 85px;
+      position: absolute;
+      top: 430px;
+      z-index: 10;
+      cursor: pointer;
+      &.next {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+        background: url("../img/sz-btn.png") no-repeat;
+        right: 0;
+      }
+      &.prev {
+        left: 0;
+        background: url("../img/sz-btn.png") no-repeat;
+      }
+    }
+
+  }
+
+  .screen-2 {
+    height: 723px;
+    background: url(../img/huoban/pd-2.jpg) center top no-repeat;
+
+    .tit1 {
+      background: url(../img/jn-tit1.png) no-repeat;
+      width: 429px;
+      height: 122px;
+      margin-left: 40px;
+    }
+    .jn-box {
+      background: url(../img/juese.png) no-repeat;
+      width: 1014px;
+      height: 397px;
+      margin: 50px auto 0;
+      position: relative;
+      ul {
+        position: absolute;
+        top: 60px;
+        left: 65px;
+        li.jn {
+          float: left;
+          width: 115px;
+          height: 121px;
+          background: url("../img/jn-b.png") no-repeat center;
+          margin: 0 20px;
+          &.active {
+            background: url("../img/jn-a.png") no-repeat center;
+          }
+          .jn-tar {
+            display: block;
+            margin-top: 10px;
+            img {
+              width: 101px;
+              height: 101px;
+              margin: 0 auto;
+              vertical-align: middle;
+              display: block;
+            }
+          }
+        }
+      }
+      h2 {
+        position: absolute;
+        top: 213px;
+        left: 55px;
+        font-size: 31px;
+        font-weight: bold;
+        font-stretch: normal;
+        letter-spacing: 2px;
+        color: #514238;
+      }
+      p {
+        position: absolute;
+        top: 261px;
+        left: 55px;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 1px;
+        color: #514238;
+      }
+
+    }
+  }
+
+  .screen-3 {
+    height: 1013px;
+    background: url(../img/huoban/pd-3.jpg) center top no-repeat;
+    .tit2 {
+      background: url(../img/jn-tit2.png) no-repeat;
+      width: 429px;
+      height: 122px;
+      margin-left: 40px;
+    }
+    .icon-all-roll {
+      position: absolute;
+      top: 68px;
+      right: 0px;
+    }
+    .foot_tab {
+      width: 100%;
+      position: absolute;
+      height: 260px;
+      top: 172px;
+      .page_btn {
+        position: absolute;
+        top: 74px;
+        z-index: 10;
+        cursor: pointer;
+        &.icon-btn-left-p {
+          left: 0px;
+        }
+        &.icon-btn-right-p {
+          right: 0px;
+        }
+      }
+    }
+
+    .roll-list {
+      margin: 0 55px;
+      overflow: hidden;
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-around;
+      .item {
+        width: 100%;
+        height: 100%;
+        a {
+          /* width: 100%;
+           height: 100%;
+           display: block;*/
+          width: 204px;
+          height: 204px;
+          position: relative;
+          display: block;
+          margin: 0 auto;
+
+          .itemFront {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background: url("../img/huoban/huoban-border.png") center no-repeat;
+            text-align: center;
+            overflow: hidden;
+            img {
+              width: 225px;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              max-width: none;
+              z-index: -1;
+            }
+            .img-mask {
+              width: 204px;
+              height: 204px;
+              display: block;
+              margin: 0 auto;
+              background: url("../img/huoban/huoban-img-mask.png") center no-repeat;
+              z-index: 10000;
+            }
+          }
+          .itemBack {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+            background: url("../img/huoban/huoban-border-b.png") center no-repeat;
+            span {
+              line-height: 204px;
+              font-weight: bold;
+              font-size: 24px;
+              color: #fbf8ed;
+
+            }
+          }
+        }
+
+      }
+    }
+
+    .qr-container {
+      position: absolute;
+      /* height: 260px; */
+      bottom: 260px;
+    }
+  }
+}
+

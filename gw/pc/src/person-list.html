@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+</head>
+<body class="bg-index">
+@@include('include/publicTop.html')
+@@include('include/top.html')
+<div class="icon-leaf1"></div>
+<div class="icon-leaf2"></div>
+<div class="icon-leaf3"></div>
+<div class="icon-leaf4"></div>
+<div class="wrapper bg">
+
+    <div class="bg bg-1">
+        <div class="jxwy-small">
+            <span class="icon-jxwy-small"></span>
+        </div>
+        <div class="jxwy-big">
+            <span class="icon-jxwy-big"></span>
+        </div>
+    </div>
+    <div class="bg bg-plist">
+        <div class="list-container">
+            <div class="tool-bar">
+                <ul class="clearfix">
+                    <li class="active"><a class="icon-hbtj-btn1" data-type="all" href="javascript:void(0);"></a></li>
+                    <li><a class="icon-btn-orange" data-type="1" href="javascript:void(0);"></a></li>
+                    <li><a class="icon-btn-purple" data-type="3" href="javascript:void(0);"></a></li>
+                    <li><a class="icon-btn-blue" data-type="2" href="javascript:void(0);"></a></li>
+                    <li class="input-group">
+                        <input type="text" class="search-input" placeholder="李未央">
+                        <span class="input-btn">
+                        <a class="icon-search-btn" id="person-search" href="javascript:void(0);"></a>
+                    </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-content">
+                <div class="scrollbar-wrapper">
+                    <div class="scrollbar_view">
+                        <ul class="-list clearfix" id="p-list">
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scrollbar__bar">
+                    <div class="scrollbar__thumb"></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="qr-container" id="gfqr">
+            <ul class="clearfix">
+                <li><a class="qr-1"></a></li>
+                <li><a class="qr-2" href="https://weibo.com/jxwysy" target="_blank"></a></li>
+                <li><a class="qr-3" target="_blank"
+                       href="https://tieba.baidu.com/f?kw=%E9%94%A6%E7%BB%A3%E6%9C%AA%E5%A4%AE%E6%89%8B%E6%B8%B8&ie=utf-8"></a>
+                </li>
+                <li><a class="qr-4"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="person-tpl-list">
+{{each}}
+<li>
+    <a href="/person/detail#id={{$value.id.substring(1)}}" target="_blank">
+        <span class="role-type-2"
+              style="background: url(../dist/img/huoban/people/{{$value.id}}.png) no-repeat center -35px/300%"></span>
+    </a>
+    <p>{{$value.name}}</p>
+</li>
+{{/each}}
+</script>
+@@include('include/footer.html')
+<script type="text/javascript" src="../dist/lib/share/jquery.share.min.js"></script>
+<script type="text/javascript" src="../dist/js/person-list.js?rev=@@hash"></script>
+</body>
+</html>

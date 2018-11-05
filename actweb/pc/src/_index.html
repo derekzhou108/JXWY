@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="icon" type="image/ico" href="../dist/img/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!--<meta name="format-detection" content="telephone=no,email=no,adress=no">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>《锦绣未央》手游官网-唐嫣代言,百亿剧王正版授权,古风恋爱养成手游</title>
+    <meta name="description" content="锦绣未央手游是由心动女神唐嫣代言,百亿剧王同名电视剧正版授权,古风恋爱养成手游.开放剧情手游诚意之作.嫣然一笑,为爱心动!">
+    <meta name="keywords"
+          content="锦绣未央,锦绣未央手游,锦绣未央手游官网,锦绣未央官网,锦绣未央手游预约,锦绣未央预约,锦绣未央官方手游,锦绣未央手游下载,锦绣未央下载,锦绣未央官方下载,开放剧情手游,唐嫣代言手游,恋爱,养成,边江配音手游,季冠霖配音手游">
+    <link rel="stylesheet" href="../dist/assets/share/swiper.min.css">
+    <link rel="stylesheet" href="../dist/assets/share/share.min.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <style>
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <!-- Promise 兼容-->
+    <script type="text/javascript" src="../dist/assets/bluebird.core.min.js"></script>
+    <script src="../dist/assets/jquery.min.js"></script>
+    <script
+            src="../dist/assets/es5-shim.min.js"></script>
+    <script type="text/javascript"
+            src="../dist/assets/es5-sham.min.js"></script>
+    <script type="text/javascript"
+            src="../dist/assets/json3.min.js"></script>
+    <script src="../dist/assets/template-web.js"></script>
+</head>
+
+<body class="">
+<!--中间内容-->
+<div class="wrapper">
+    <div class="music_warp music_p">
+        <audio id="topMusic" src="../dist/video/jxwy.mp3" preload="auto" loop="false" hidden="true"></audio>
+    </div>
+    <!-- 第一屏 -->
+<div class="head">
+<div class="container">
+    <h1 class="logo-wrapper">
+        <!--<ins>锦绣山河，此情未央</ins>-->
+    </h1>
+    <div class="jxwy-small">
+        <span class="icon-jxwy-small"></span>
+    </div>
+    <div class="jxwy-big">
+        <span class="icon-jxwy-big"></span>
+    </div>
+    <div class="jxwy-text-2">
+        <span class="icon-jxwy-h2"></span>
+    </div>
+    <div class="play-wrapper" id="playVideo"
+         data-video="//1255423641.vod2.myqcloud.com/7bfdbe68vodtransgzp1255423641/9598d9e57447398155603212634/v.f230.m3u8">
+        <button type="button" class="circle"></button>
+    </div>
+    <section class="entry-wrapper">
+        <a href="/site/index" class="icon-link"></a>
+    </section>
+    <div class="user-info">
+                <span class="area-info">
+                </span>
+    </div>
+<script type="text/html" id="userInfo">
+{{if user_name}}
+欢迎小主，{{user_name.length>3?user_name.substring(0,3)+'...':user_name}}
+<a class="user-logout" href="javascript:void(0);" onclick="">【注销】</a>
+{{else}}
+
+欢迎小主，请
+<a class="user-login" href="javascript:void(0);">【登录】</a>
+
+{{/if}}
+</script>
+</div>
+</div>
+    <div class="part part1" id="floor1">
+        <div class="container">
+            <div class="first-box" id="pos-tpl2"></div>
+            <div class="title">
+                <span class="icon-title-1"></span>
+            </div>
+            <div class="second-box">
+                <div class="sec-item">
+                    <img src="../dist/img/sec-item-1.png">
+                    <p>限定手持</p>
+                </div>
+                <div class="sec-item">
+                    <img src="../dist/img/sec-item-2.png">
+                    <p>金饼*99</p>
+                </div>
+                <div class="sec-item"><img src="../dist/img/sec-item-3.png">
+                    <p>银饼*99999</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第二屏 -->
+    <div class="part part2" id="floor2">
+        <div class="container">
+            <div class="public-btn"><span class="icon-public-btn" id="getPri">立即领取</span></div>
+            <div class="con-wrapper" id="pos-tlp3"></div>
+            <div class="title" id="floor2-1">
+                <span class="icon-title-3"></span>
+                <p class="tips">邀请好友在本页面下载游戏，即可获得相应亲友壕礼与奢华奖池抽奖机会</p>
+            </div>
+            <div class="box-3" id="pos-tlp4"></div>
+            <div class="public-btn"><span class="icon-public-btn" id="sendInvitation">邀请好友</span></div>
+        </div>
+    </div>
+    <!-- 第三屏 -->
+<div class="part part3" id="floor3">
+<div class="container">
+    <div class="desc-text" id="desc-1"></div>
+<script type="text/html" id="desc-tpl1">
+已邀请好友数量：<span>{{invite_num}}</span>名
+</script>
+    <div style="width: 100%"></div>
+    <div class="title">
+        <span class="icon-title-4"></span>
+        <p class="tips">
+            本页面下载游戏即可获得1次抽奖机会！
+            <br>
+            每邀请一个好友参与公测下载，即可增加1次抽奖机会。每个账号最多可获6次抽奖机会
+        </p>
+    </div>
+    <div class="enter_list">
+        <span class="icon-draw-img"></span>
+    </div>
+    <div class="receive-box">
+        <button class="rec-btn" type="button">兑换奖品</button>
+    </div>
+    <div class="desc-text text-center" id="desc-2">
+    </div>
+<script type="text/html" id="desc-tpl2">
+剩余抽奖次数：<span>{{times}}</span>次
+</script>
+</div>
+</div>
+    <div class="part part4" id="floor4">
+        <div class="container">
+            <div class="title">
+                <span class="icon-title-5"></span>
+                <p class="tips">
+                    金鹰女神唐嫣倾情代言 女神专属古风恋爱手游
+                </p>
+            </div>
+            <div class="yxts-content swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="yxts-pagination"></div>
+                <a href="javascript:void(0);" class="hh next icon-sz-btn" id="next1"></a>
+                <a href="javascript:void(0);" class="hh prev icon-sz-btn" id="prev1"></a>
+            </div>
+            <div class="title">
+                <span class="icon-title-6"></span>
+            </div>
+            <div class="rule-content" id="pos-tlp6"></div>
+
+            <div class="qr-container">
+                <ul class="">
+                    <li><a class="qr-1">微信公众号</a></li>
+                    <li><a class="qr-2">官方QQ群</a></li>
+                    <li><a class="qr-3">百度贴吧</a></li>
+                    <li><a class="qr-4">官方微博</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footerPc">
+    <div class="footWarp u-clearfix">
+        <div class="u-left" style="margin-right: 30px;margin-top: 55px;">
+            <img src="../dist/img/icon/newGovIcon.gif" alt=""></div>
+        <div class="u-left part-right" style="margin-top: 35px;">
+            <p class="contact">
+            <p style="border:none;color: #000;cursor: none;">联系我们：0755-86531031</p>
+            </p>
+            <p class="copyright" style="margin-bottom: 5px;"><a href="http://www.ccm.gov.cn/"
+                                                                style="color:#000000;margin-right: 15px;text-decoration: none;"
+                                                                target="_blank">粤网文（2017）3800-729号</a>
+                增值电信业务经营许可证：粤B2-20170497 <a href="http://www.miitbeian.gov.cn"
+                                            style="color:#000000;text-decoration: none;margin-left: 15px;"
+                                            target="_blank">粤ICP备17047563号-2</a></p>
+            <p class="" style="margin-bottom: 5px;">
+                <a target="_blank"
+                   href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001339"><img
+                        style="width: 16px;position: relative;top: 3px;"
+                        src="http://cdn.ksgame.com/ksgame/pc2/dist/img/foreground/icon_yuewangga1.png" alt=""></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001339"
+                   style="color: #000000;text-decoration: underline;">粤公网安备 44030502001339号</a>
+                <span style="margin-left:10px">深圳金翅鸟信息科技有限公司</span>
+            </p>
+            <p class="copyright" style="margin-bottom: 5px;">Copyright © 2017 jinchiniao. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="tlp4">
+{{each invite value}}
+
+{{if $index%2 ==0}}
+<div class="item">
+<span class="item-title">{{value.title}}</span>
+<div class="gifts">
+{{each value.gift val}}
+<span class="icon-{{val.icon}}"><p>{{val.text}}</p></span>
+{{/each}}
+</div>
+<div class="gift-type">
+        <span class="icon-{{inviteNum-value.num>=0?'unlock':'lock'}}"></span>
+</div>
+</div>
+{{else}}
+<div class="item right">
+<span class="item-title">{{value.title}}</span>
+<div class="gifts">
+{{each value.gift val}}
+<span class="icon-{{val.icon}}"><p>{{val.text}}</p></span>
+{{/each}}
+</div>
+<div class="gift-type">
+        <span class="icon-{{inviteNum-value.num>=0?'unlock':'lock'}}"></span>
+</div>
+</div>
+
+{{/if}}
+
+                {{/each}}
+</script>
+
+<div class="float">
+    <div class="float-con">
+        <div class="ewm-box"><img src="../dist/img/download-qr.png" width="146" height="147" alt="">
+            <p>扫码下载</p>
+            <div class="light"></div>
+        </div>
+    </div>
+    <div class="f-a-con">
+        <a class="btn a2" href="#floor1">立即下载</a>
+        <a class="btn a2" href="#floor2">十大福利</a>
+        <a class="btn a3" href="#floor2-1">好友集结</a>
+        <a class="btn a4" href="#floor3">豪华抽奖</a>
+        <a class="btn a5" href="#floor4">游戏特色</a>
+
+    </div>
+    <div class="f-b-con u-clearfix">
+        <a href="javascript:void(0);" class="gzh-link">公众号</a>
+        <a href="https://tieba.baidu.com/f?kw=%E9%94%A6%E7%BB%A3%E6%9C%AA%E5%A4%AE%E6%89%8B%E6%B8%B8&ie=utf-8"
+           target="_blank" class="bdtb-link">百度</br>贴吧</a>
+        <a href="https://weibo.com/jxwysy" target="_blank">微博</a>
+        <div class="qr-hover hide"><span class="icon-float-qr-hover"></span></div>
+    </div>
+    <div class="f-c-con">
+        <a class="icon-top" href="javascript:void(0);"></a>
+    </div>
+</div>
+
+
+    <!--底部-->
+
+
+<script id="tpl2" type="text/html">
+
+<div class="box -left">
+<section class="progress-wrapper">
+<section class="progress">
+<ul class="progress-list list-num u-clearfix">
+{{each boxs.list value}}
+<li class="item item-img u-left" data-num="{{value.num}}" data-gnum="{{value.gnum}}">
+<span class="box">
+        <em class="icon-box-{{$index+1}}"></em>
+</span>
+</li>
+{{/each}}
+</ul>
+</section>
+    <span class="icon-box-line"></span>
+<section class="progress">
+<ul class="progress-list u-clearfix">
+{{each boxs.list value}}
+<li class="item item-desc u-left" data-num="{{value.num}}">
+<span class="num-img">
+        <em class="icon-num-{{$index+1}}"></em>
+</span>
+<span class="desc">{{value.desc}}</span>
+
+</li>
+{{/each}}
+</ul>
+</section>
+</section>
+</div>
+<div class="box -right">
+    <div class="tip-wrapper">
+        <p class="text">已经有 <strong class="num">0</strong> 名小主预约</p>
+    </div>
+    <div class="center-box u-clearfix">
+        <div class="qr-box u-left">
+            <div class="qr">
+                <div class="line"></div>
+            </div>
+            <span>扫一扫立即下载</span>
+        </div>
+        <div class="buttons-box u-left" id="download">
+            <a class="ios"></a>
+            <a class="az"></a>
+
+        </div>
+    </div>
+    <div class="down-box">
+        <a class="icon-pc-download" href="javascript:alert('敬请期待！')"></a>
+    </div>
+</div>
+</script>
+
+<script id="tpl3" type="text/html">
+{{each con value}}
+<div class="item" data-num="{{value.id}}">
+        <span class="bag icon-bag-{{$index+1}}"></span>
+<span class="text1">{{value.text.substring(0,4)}}<br>{{value.text.substring(4)}}</span>
+<span class="text2">{{value.desc}}</span>
+</div>
+{{/each}}
+</script>
+<script type="text/html" id="tpl6">
+<ul>
+{{each rules value}}
+<li><span class="icon-rule">{{$index+1}}</span>
+<p>{{value}}</p></li>
+{{/each}}
+</ul>
+
+</script>
+<script type="text/html" id="dg-list-draw">
+<ul>
+{{each}}
+<li><span class="draw-item">{{$value.name}}</span>
+    <span style="width: 20px">1</span>
+<span>
+        <button type="button" data-type="{{$value.p_type}}" data-id="{{$value.id}}"
+        class="dialog-btn {{$value.exchange_status==1?'':'act'}}">{{$value.exchange_status==1?'已兑换':'立即兑换'}}</button></span>
+</li>
+{{/each}}
+</ul>
+</script>
+<script type="text/html" id="dg-list-invite">
+<ul>
+{{each}}
+<li><span>小主：{{$value}}</span>
+    <span><button type="button" class="dialog-btn">已入宫</button></span></li>
+{{/each}}
+</ul>
+</script>
+<script type="text/html" id="sel-opts">
+<option value="">请选择系统</option>
+{{each}}
+<option value="{{$value.appid}}">{{$value.app_name}}</option>
+{{/each}}
+
+</script>
+
+<script type="text/html" id="sel2-opts">
+<option value="">请选择大区</option>
+{{each}}
+<option value="{{$value.id}}">{{$value.serverName}}</option>
+{{/each}}
+
+</script>
+<!--<script src="./assets/jquery.share.min.js"></script>-->
+<script src="../dist/assets/layer.min.js"></script>
+<script src="../dist/assets/swiper/js/swiper.min.js"></script>
+<script src="../dist/assets/clipboard.min.js"></script>
+<!--<script src="./assets/vconsole.min.js"></script>-->
+<!--<script src="./assets/fastclick.min.js"></script>-->
+
+<!--[if lt IE 9]>
+<script src="../dist/assets/respond.min.js"></script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-shim.js" charset="utf-8"></script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/libs/es5-sham.js" charset="utf-8"></script>
+<script src="../dist/assets/jquery.pseudo.js"></script>
+<![endif]-->
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.0.js" charset="utf-8"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="../dist/js/main.min.js"></script>
+
+</body>
+
+</html>
